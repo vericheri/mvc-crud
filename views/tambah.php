@@ -7,7 +7,7 @@ if(isset($_POST[simpan])) {
 }
 ?>
 
-<h2>Tambah Mahasiswa</h2>
+<h2>Tambah Menu</h2>
 <form method="POST">
     Minuman:
     <input type="text" name="minuman">
