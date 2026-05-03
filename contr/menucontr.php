@@ -3,7 +3,7 @@ include_once dirnmae(__DIR__)."/config/db.php";
 include_once dirnmae(__DIR__)."/models/menu.php";
 class menucontr {
     public $model;
-    public __construct() {
+    public function __construct() {
         $database = new db();
         $db=$database->connect();
         $this->model = new menu($db);
