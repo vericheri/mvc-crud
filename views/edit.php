@@ -4,7 +4,7 @@ $contr = new menucontr();
 $id = $_GET['id'];
 $data = $contr->model->getbyid($id);
 $row = $data->fetch_assoc();
-if(isset($_POST[update])) {
+if(isset($_POST['update'])) {
     $contr->model->update($id, $_POST['minuman'], $_POST['harga']);
     header("location:../index.php");
 }
