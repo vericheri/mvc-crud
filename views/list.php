@@ -19,8 +19,8 @@ while($row = $data->fetch_assoc()) {
 ?>
 <tr>
     <td><?=$no++;?></td>
-    <td><?=row['minuman'];?></td>
-    <td><?=row['harga'];?></td>
+    <td><?=$row['minuman'];?></td>
+    <td><?=$row['harga'];?></td>
     <td>
         <a href="views/edit.php?id=<?=$row['id'];?>">Edit</a>
         <a href="index.php?hapus=<?=$row['id'];?>">Hapus</a>
