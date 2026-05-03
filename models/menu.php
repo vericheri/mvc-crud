@@ -14,7 +14,7 @@ class menu {
         return $this->conn->query("INSERT INTO menu(minuman, harga) VALUES ('$minuman', '$harga')");
     }
     public function update($id, $minuman, $harga) {
-        return $this->conn->query("UPDATE menu SET minuman=$minuman, harga=$harga WHERE id=$id");
+        return $this->conn->query("UPDATE menu SET minuman='$minuman', harga=$harga WHERE id=$id");
     }
     public function hapus($id) {
         return $this->conn->query("DELETE FROM menu WHERE id=$id");
