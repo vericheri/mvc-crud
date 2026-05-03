@@ -5,5 +5,5 @@ if(isset($_GET['hapus'])) {
     $contr->model->hapus($_GET['hapus']);
     header("location=../index.php");
 }
-iclude_once "views/list.php";
+include_once "views/list.php";
 ?>
