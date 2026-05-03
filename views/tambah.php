@@ -1,7 +1,7 @@
 <?php
 include_once "../contr/menucontr.php";
 $contr = new menucontr();
-if(isset($_POST[simpan])) {
+if(isset($_POST["simpan"])) {
     $contr->model->tambah($_POST['minuman'], $_POST['harga']);
     header("location:../index.php");
 }

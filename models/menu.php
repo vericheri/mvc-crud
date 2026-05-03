@@ -10,7 +10,7 @@ class menu {
     public function getbyid($id) {
         return $this->conn->query("SELECT * FROM menu WHERE id=$id");
     }
-    public function buat($minuman, $harga) {
+    public function tambah($minuman, $harga) {
         return $this->conn->query("INSERT INTO menu(minuman, harga) VALUES ('$minuman', '$harga')");
     }
     public function update($id, $minuman, $harga) {
