@@ -1,6 +1,6 @@
 <?php
-include_once dirnmae(__DIR__)."/config/db.php";
-include_once dirnmae(__DIR__)."/models/menu.php";
+include_oncex dirname(__DIR__)."/config/db.php";
+include_once dirname(__DIR__)."/models/menu.php";
 class menucontr {
     public $model;
     public function __construct() {
